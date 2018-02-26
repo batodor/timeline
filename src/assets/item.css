@@ -1,0 +1,26 @@
+.item {
+	margin-top: 20px;
+	position: relative;
+}
+
+.item[data-highlight]::before {
+	position: absolute;
+    content: ' ';
+    left: -30px;
+    width: 10px;
+    height: 10px;
+    background: #797979;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 10px;
+}
+
+.item a {
+	color: #333;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.item a:hover {
+	color: #0078d7;
+}
